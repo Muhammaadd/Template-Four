@@ -1,0 +1,278 @@
+:root {
+    --maincolor :#009688;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: rgba(51, 51, 51, 0.7);
+    padding: 25px 0;
+}
+#mainsection {
+    background-image: url(../images/07.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#mainsection .banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+header span,header ul li {
+    color: #fff;
+    list-style: none;
+}
+header i {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+header {
+    position: relative;
+}
+.navbar {
+    position: absolute;
+    top: 79px;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(51, 51, 51, .7);
+    margin-top: 70px;
+    display: none;
+    transition: all .8s ease;
+    z-index: 4;
+}
+.display {
+    display: flex;
+}
+.margin {
+    margin: 0;
+}
+header .navbar li {
+    padding: 15px;
+    color: var(--maincolor);
+    font-size: 1.1em;
+}
+.settings {
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    transition: all .5s ease;
+    z-index: 5;
+}
+.move{
+    left: 0px;
+}
+.sqr {
+    background-color: rgb(236, 233, 233);
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: .9em;
+}
+.sqr p {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.circles {
+    width: 100%;
+    padding: 0 20px;
+}
+.circles div {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.circles .first {
+    background-color: #FF9800;
+}
+.circles .second {
+    background-color: #E91E63;
+}
+.circles .third {
+    background-color: #009688;
+}
+.circles .forth {
+    background-color: #03A9F4;
+}
+.circles .fifth {
+    background-color: #4CAF50;
+}
+.btns {
+    width: 100%;
+    padding: 0 30px;
+
+}
+.random span{
+    background-color: var(--maincolor);
+    color: white;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: .8em;
+    display: block;
+    cursor: pointer;
+}
+#setting {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    left: 207px;
+    top: 15%;
+    cursor: pointer;
+    z-index: 4;
+}
+#iconbg {
+    background-color: #fff;
+    position: absolute;
+    left: 200px;
+    top: 14%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 4;
+}
+.iconcontainer {
+    position: fixed;
+}
+.sectionscircles {
+    position: absolute;
+    right: 1.5%;
+    top: 37%;
+    z-index: 3;
+}
+.sectionscircles div {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    border: 4px solid var(--maincolor);
+    margin-bottom: 20px;
+}
+.sectionscircles a {
+    position: relative;
+}
+.sectionscircles a p {
+    position: absolute;
+    text-align: center;
+    padding: 7px 0;
+    width: 130px;
+    left: -154px;
+    top: -8px;
+    color: white;
+    background-color: var(--maincolor);
+    display: none;
+}
+.sectionscircles a div::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--maincolor);
+    border-width: 10px;
+    top: 0;
+    left: -24px;
+    display: none;
+}
+.sectionscircles a div:hover ~ p {
+    display: block;
+}
+.sectionscircles a div:hover::after {
+    display: block;
+}
+.mainsectioncontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    width: 85%;
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+}
+h1 span {
+    color: var(--maincolor);
+    margin: 0 5px;
+}
+.mainsectioncontent p {
+    font-size: 1.3em;
+    text-align: center;
+}
+.aboutimg img{
+    width: 100%;
+}
+.aboutcontent p:first-of-type {
+    color: var(--maincolor);
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+.aboutcontent p + p {
+    color: #767676;
+    padding: 10px 0;
+    font-size: 1.1em;
+}
+.skills {
+    background-color: #EEE;
+}
+.bar {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.bar p {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.coloredbar {
+    background-color: #f6f6f6;
+    width: 82.5%;
+    position: relative;
+    border-radius: 5px;
+}
+.coloredbar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--maincolor);
+    border-radius: 5px;
+}
+.bar1::after {
+    width: 75%;
+}.bar2::after {
+    width: 95%;
+}.bar3::after {
+    width: 80%;
+}.bar4::after {
+    width: 89%;
+}.bar5::after {
+    width: 67%;
+}.bar6::after {
+    width: 89%;
+}
